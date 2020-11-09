@@ -84,7 +84,7 @@
             <van-button wx:if="{{item.stores <= 0}}" type="danger" size="small" round>
               已抢完
             </van-button>
-            <sc-button sc-class="sc-btn box-shadow-9 new-color" wx:if="{{item.dateStartInt <= 0 && item.dateEndInt > 0 && item.stores > 0}}" style="display: inline-block;margin-left: -5rpx;margin-top: 10rpx;" open-type="getUserInfo" bind:getuserinfo="getUserInfo" plain='true'>
+            <sc-button raised sc-class="sc-btn box-shadow-9 new-color" wx:if="{{item.dateStartInt <= 0 && item.dateEndInt > 0 && item.stores > 0}}" style="display: inline-block;margin-left: -5rpx;margin-top: 10rpx;" open-type="getUserInfo" bind:getuserinfo="getUserInfo" plain='true'>
               立即抢购
             </sc-button>
           </view>
@@ -98,16 +98,20 @@
   </view>
   <view class="goods-container">
     <view class="goods-box" wx:for="{{goods}}" wx:key="id" bindtap="toDetailsTap" data-id="{{item.id}}">
-      <view class="img-box">
-        <image src="{{item.pic}}" class="image" mode="aspectFill" lazy-load="true" />
-      </view>
-      <view class="goods-title">{{item.name}}</view>
-      <view style='display:flex;'>
-        <view class="goods-price">¥ {{item.minPrice}}</view>
-        <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="old-goods-price" style='color:#aaa;text-decoration:line-through'>
-          ¥ {{item.originalPrice}}
-        </view>
-      </view>
+      <sc-cell-group>
+        <sc-cell>
+          <view class="img-box">
+            <image src="{{item.pic}}" class="image" mode="aspectFill" lazy-load="true" />
+          </view>
+          <view class="goods-title">{{item.name}}</view>
+          <view style='display:flex;'>
+            <view class="goods-price">¥ {{item.minPrice}}</view>
+            <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="old-goods-price" style='color:#aaa;text-decoration:line-through'>
+              ¥ {{item.originalPrice}}
+            </view>
+          </view>
+        </sc-cell>
+      </sc-cell-group>
     </view>
   </view>
   <!-- footer -->
@@ -119,5 +123,4 @@
 <view class='coupons-float' bindtap="goCoupons">
   <image src="/images/gift.png"></image>
 </view>
-
 <material-loading id="loading"></material-loading>

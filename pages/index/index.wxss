@@ -192,49 +192,35 @@
   background-color: #F2f2f2;
 }
 .goods-box{
-  /* width: 339rpx;
-  height: 472rpx;
-  background-color: #fff;
-  overflow: hidden;
-  margin-bottom: 24rpx;
-  border-radius:5px; */
-  
-  width:720rpx;
+  width:700rpx;
   margin: auto;
   margin-top: 20rpx;
   background-color: #FFF;
-
 }
 .goods-box .img-box{
-  /* width: 339rpx;
-  height: 339rpx;
-  overflow: hidden; */
-  width:720rpx;
+  width:650rpx;
+  margin-left: -20rpx;
   height: 250rpx;
   overflow: hidden;
 }
 .goods-box .img-box image{
-  width:720rpx;
+  width:700rpx;
   height: 250rpx;
 }
 .goods-box .goods-title{
-  /* width: 280rpx;
+  width: 600rpx;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 24rpx;
+  font-size: 30rpx;
+  font-weight: 400;
   padding: 24rpx 0 0rpx 0;
   color:#000;
-  margin-left: 24rpx; */
-  margin-top: 20rpx;
-  margin-left: 20rpx;
-  font-size:30rpx;
-  font-weight: 400;
 }
 .goods-box .goods-price{
   width: 280rpx;
   overflow: hidden;
-  font-size: 36rpx;
+  font-size: 40rpx;
   padding: 24rpx 0;
   color:#e64340;
   margin-left: 24rpx;
@@ -244,7 +230,7 @@
   overflow: hidden;
   font-size: 30rpx;
   padding: 24rpx 0;
-  margin-left: -180rpx;
+  margin-left: -150rpx;
   margin-top: 10rpx;
 }
 
