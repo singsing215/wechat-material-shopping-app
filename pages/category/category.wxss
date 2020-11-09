@@ -8,6 +8,7 @@ page,view,image,input {
 }
 
 .container {
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
@@ -219,6 +220,7 @@ page,view,image,input {
   background: rgba(0, 0, 0, 0.3);
 }
 .sku-container {
+  position: relative;
   width: 100vw;
   padding: 32rpx 32rpx 0 32rpx;
 }

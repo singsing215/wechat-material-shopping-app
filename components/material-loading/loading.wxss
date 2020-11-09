@@ -4,12 +4,10 @@ view{
   box-sizing: border-box;
 }
 .loading-container{
-  position: relative;
-  z-index: 999999;
-}
-.ui-test-item-content{
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 999999;
 }
+

@@ -26,7 +26,6 @@ Page({
       withShareTicket: true
     })
     this.categories();
-    // this.selectComponent("#loading").show();
   },
   async categories() {
     this.selectComponent("#loading").show();
