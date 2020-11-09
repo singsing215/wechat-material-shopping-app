@@ -1,0 +1,15 @@
+view{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.loading-container{
+  position: relative;
+  z-index: 999999;
+}
+.ui-test-item-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
